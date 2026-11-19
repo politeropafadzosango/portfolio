@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Polite Ropafadzo Sango</title>
+  <meta name="description" content="Contact Polite Ropafadzo Sango about internships, learning opportunities, collaboration and professional networking.">
+  <meta property="og:title" content="Contact Polite Ropafadzo Sango">
+  <meta property="og:description" content="Internships, collaboration and networking enquiries welcome.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#06122a">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+  <a class="skip" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+
+  <main id="main">
+    <section class="page-hero dark">
+      <div class="container">
+        <span class="eyebrow">Contact</span>
+        <h1>Let's connect</h1>
+        <p>I welcome enquiries about internships, learning opportunities, collaboration and professional networking.</p>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container contact-grid">
+        <div class="card">
+          <h3>Contact details</h3>
+          <ul class="contact-list" data-contact-list style="margin-top:18px"></ul>
+        </div>
+
+        <div class="card">
+          <h3>Send me a message</h3>
+          <!-- Netlify Forms: messages arrive in the Netlify dashboard (Forms tab) and can be emailed to you. -->
+          <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate style="margin-top:18px">
+            <input type="hidden" name="form-name" value="contact">
+            <p class="hidden"><label>Leave this empty <input name="bot-field"></label></p>
+            <div class="field-row">
+              <div class="field">
+                <label for="f-name">Full name</label>
+                <input id="f-name" name="name" type="text" maxlength="100" autocomplete="name" required>
+                <div class="field-error" data-error-for="name" aria-live="polite"></div>
+              </div>
+              <div class="field">
+                <label for="f-email">Email address</label>
+                <input id="f-email" name="email" type="email" maxlength="255" autocomplete="email" required>
+                <div class="field-error" data-error-for="email" aria-live="polite"></div>
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-subject">Subject</label>
+              <input id="f-subject" name="subject" type="text" maxlength="150" required>
+              <div class="field-error" data-error-for="subject" aria-live="polite"></div>
+            </div>
+            <div class="field">
+              <label for="f-message">Message</label>
+              <textarea id="f-message" name="message" maxlength="2000" required></textarea>
+              <div class="field-foot">
+                <div class="field-error" data-error-for="message" aria-live="polite"></div>
+                <span class="counter" id="msg-count">0 / 2000</span>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
