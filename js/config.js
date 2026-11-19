@@ -37,9 +37,9 @@ window.PORTFOLIO = {
       description: "A student portal for Adventist students at Bindura University, giving one central place for announcements, activities, events, resources and other organisational services. Currently being tested.",
       tech: ["HTML", "CSS", "JavaScript", "Supabase"],
       status: "In Development",
-      live: "",
-      repo: "",
-      image: ""       // e.g. "assets/projects/pcm-portal.png"
+      live: "https://buse-pcm.netlify.app",
+      repo: "https://github.com/politeropafadzosango/buse-pcm-portal-showcase",
+      image: "assets/projects/pcm-portal.png"
     },
     {
       name: "Takeoff Driver Onboarding System",
@@ -57,7 +57,7 @@ window.PORTFOLIO = {
       status: "In Development",
       live: "https://politeropafadzosango.github.io/portfolio/",
       repo: "https://github.com/politeropafadzosango/portfolio",
-      image: ""
+      image: "assets/projects/portfolio.png"
     }
   ],
 
