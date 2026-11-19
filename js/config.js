@@ -42,15 +42,6 @@ window.PORTFOLIO = {
       image: "assets/projects/pcm-portal.png"
     },
     {
-      name: "Takeoff Driver Onboarding System",
-      description: "A driver onboarding application built as a practical software development exercise. It collects driver information, manages onboarding details and supports document submission.",
-      tech: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
-      status: "Practical Project",
-      live: "",
-      repo: "",
-      image: ""
-    },
-    {
       name: "Personal Portfolio Website",
       description: "This website — a professional portfolio showing my technical skills, projects, experience and career development.",
       tech: ["HTML", "CSS", "JavaScript"],
