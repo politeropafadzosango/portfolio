@@ -55,7 +55,7 @@ window.PORTFOLIO = {
       description: "This website — a professional portfolio showing my technical skills, projects, experience and career development.",
       tech: ["HTML", "CSS", "JavaScript"],
       status: "In Development",
-      live: "",
+      live: "https://politeropafadzosango.github.io/portfolio/",
       repo: "https://github.com/politeropafadzosango/portfolio",
       image: ""
     }

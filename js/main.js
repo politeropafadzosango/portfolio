@@ -219,12 +219,23 @@
       btn.disabled = true; btn.textContent = "Sending…";
       status.className = "form-status"; status.textContent = "";
       try {
-        const res = await fetch("/", {
+        // FormSubmit (free): emails each message to P.email. The very first
+        // message sends an activation email that must be confirmed once.
+        if (!P.email) throw new Error("no email set");
+        const d = Object.fromEntries(new FormData(form));
+        if (d._honey) throw new Error("spam");
+        const res = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(P.email)}`, {
           method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: new URLSearchParams(new FormData(form)).toString()
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify({
+            name: d.name, email: d.email, message: d.message,
+            _subject: `Portfolio message: ${d.subject}`,
+            _replyto: d.email,
+            _template: "table"
+          })
         });
-        if (!res.ok) throw new Error(res.status);
+        const out = await res.json().catch(() => ({}));
+        if (!res.ok || String(out.success) !== "true") throw new Error(out.message || res.status);
         form.reset(); counter.textContent = "0 / 2000";
         status.className = "form-status success";
         status.textContent = "Thank you! Your message has been sent. I will get back to you soon.";

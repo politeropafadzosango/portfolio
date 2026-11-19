@@ -22,14 +22,12 @@ Put files in the **`assets`** folder:
 ## Viewing it
 Double-click `index.html` to open it in your browser.
 
-## Publishing (free) on Netlify
-1. Go to app.netlify.com → **Add new site → Deploy manually**.
-2. Drag this whole folder onto the page.
-3. Netlify gives you a link; you can rename it under **Site configuration → Change site name**.
-
-To update later: open the site in Netlify → **Deploys** → drag the folder again.
+## Publishing (free) on GitHub Pages
+The site lives at https://github.com/politeropafadzosango/portfolio.
+In that repository: **Settings → Pages → Source: Deploy from a branch → Branch: main / (root) → Save**.
+After a minute it is live at https://politeropafadzosango.github.io/portfolio/ and updates on every push.
 
 ## Contact form
-The form uses **Netlify Forms** (free, 100 messages a month). It only works once the site is on Netlify.
-Messages appear in Netlify under **Forms**. To get them by email:
-**Site configuration → Notifications → Emails and webhooks → Form submission notifications → Add email notification**.
+Messages are emailed to the `email` in `js/config.js` using **FormSubmit** (free, no account).
+The very first message triggers an activation email from FormSubmit — click **Activate** in it once.
+After that every message arrives in your inbox; just press Reply to answer.
