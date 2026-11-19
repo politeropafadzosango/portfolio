@@ -56,7 +56,7 @@ window.PORTFOLIO = {
       tech: ["HTML", "CSS", "JavaScript"],
       status: "In Development",
       live: "",
-      repo: "",
+      repo: "https://github.com/politeropafadzosango/portfolio",
       image: ""
     }
   ],
