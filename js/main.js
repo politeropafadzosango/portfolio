@@ -235,7 +235,18 @@
           })
         });
         const out = await res.json().catch(() => ({}));
-        if (!res.ok || String(out.success) !== "true") throw new Error(out.message || res.status);
+        if (/activat/i.test(out.message || "")) {
+          // First-ever message: FormSubmit emails the owner an activation link instead of delivering.
+          status.className = "form-status error";
+          status.textContent = "The contact form is still being set up, so this message was not delivered yet. " +
+            `Please email me directly at ${P.email}.`;
+          console.warn("FormSubmit:", out.message);
+          return;
+        }
+        if (!res.ok || String(out.success) !== "true") {
+          console.warn("FormSubmit error:", res.status, out);
+          throw new Error(out.message || res.status);
+        }
         form.reset(); counter.textContent = "0 / 2000";
         status.className = "form-status success";
         status.textContent = "Thank you! Your message has been sent. I will get back to you soon.";
