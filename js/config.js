@@ -35,7 +35,7 @@ window.PORTFOLIO = {
     {
       name: "BUSE PCM Student Portal",
       description: "A student portal for Adventist students at Bindura University, giving one central place for announcements, activities, events, resources and other organisational services. Currently being tested.",
-      tech: ["HTML", "CSS", "JavaScript", "Supabase"],
+      tech: ["HTML", "CSS", "JavaScript", "PostgreSQL", "Supabase"],
       status: "In Development",
       live: "https://buse-pcm.netlify.app",
       repo: "https://github.com/politeropafadzosango/buse-pcm-portal-showcase",

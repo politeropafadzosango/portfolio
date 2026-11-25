@@ -31,3 +31,6 @@ After a minute it is live at https://politeropafadzosango.github.io/portfolio/ a
 Messages are emailed to the `email` in `js/config.js` using **FormSubmit** (free, no account).
 The very first message triggers an activation email from FormSubmit — click **Activate** in it once.
 After that every message arrives in your inbox; just press Reply to answer.
+
+## Copyright
+© 2026 Polite Ropafadzo Sango. All rights reserved. This code is shared for viewing only — see [LICENSE](LICENSE).
