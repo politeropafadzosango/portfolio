@@ -34,3 +34,8 @@ After that every message arrives in your inbox; just press Reply to answer.
 
 ## Copyright
 © 2026 Polite Ropafadzo Sango. All rights reserved. This code is shared for viewing only — see [LICENSE](LICENSE).
+
+## Public CV
+The CV people download is `assets/Polite-Sango-CV.pdf`, made from `cv/cv.html`.
+To update it: edit `cv/cv.html`, then ask Claude to re-create the PDF (or open it in Edge → Print → Save as PDF, A4, no headers/footers).
+Never put your ID number, home address or date of birth in it — it is public.

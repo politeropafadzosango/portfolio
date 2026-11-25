@@ -106,6 +106,7 @@
   document.querySelectorAll("[data-fill]").forEach((el) => {
     const v = P[el.dataset.fill];
     if (Array.isArray(v)) {
+      if (!v.length && el.hasAttribute("data-hide-empty")) { (el.closest(".card") || el).remove(); return; }
       el.innerHTML = v.length ? v.map((x) => `<li>${esc(x)}</li>`).join("") : `<li class="muted">To be added</li>`;
     } else {
       el.textContent = v || "To be added";
