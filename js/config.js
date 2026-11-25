@@ -26,7 +26,7 @@ window.PORTFOLIO = {
     { group: "Database Management", level: "Learning and practising", icon: "database",
       items: ["MySQL", "PostgreSQL", "SQLite"] },
     { group: "Tools and Platforms", level: "Learning and practising", icon: "tool",
-      items: ["Visual Studio Code", "Git", "GitHub", "XAMPP", "Netlify"] },
+      items: ["Visual Studio Code", "Git", "GitHub", "GitHub Pages", "Netlify", "Supabase", "XAMPP"] },
     { group: "Technical Interests", level: "Exploring", icon: "spark",
       items: ["API Development", "Software Testing", "Database Design", "UI/UX Design", "Data Analysis"] }
   ],
